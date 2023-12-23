@@ -189,7 +189,7 @@
                                         />
                                     </div>
 
-                                    <div class="col-sm-6 col-md-6">
+                                    {{-- <div class="col-sm-6 col-md-6">
                                         <x-input type="number"
                                                  label="Tax"
                                                  name="tax"
@@ -197,9 +197,9 @@
                                                  placeholder="0"
                                                  value="{{ old('tax') }}"
                                         />
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="col-sm-6 col-md-6">
+                                    {{-- <div class="col-sm-6 col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label" for="tax_type">
                                                 {{ __('Tax Type') }}
@@ -221,7 +221,7 @@
                                             </div>
                                             @enderror
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="col-md-12">
                                         <div class="mb-3">

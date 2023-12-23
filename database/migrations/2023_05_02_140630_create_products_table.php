@@ -15,15 +15,13 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->string('code')->unique()->nullable();
             //$table->string('product_barcode_symbology')->nullable();
             $table->integer('quantity');
-            $table->integer('buying_price')->comment('Buying Price');
-            $table->integer('selling_price')->comment('Selling Price');
-            $table->integer('quantity_alert');
-            $table->integer('tax')->nullable();
-            $table->tinyInteger('tax_type')->nullable();
+            $table->integer('buying_price')->comment('Buying Price')->nullable();
+            $table->integer('selling_price')->comment('Selling Price')->nullable();
+            $table->integer('quantity_alert')->nullable();
             $table->text('notes')->nullable();
 
             $table->string('product_image')->nullable();
